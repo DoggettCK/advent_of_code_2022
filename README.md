@@ -1,6 +1,6 @@
 # AdventOfCode
 
-**TODO: Add description**
+Elixir versions of my solutions to the 2022 Advent of Code
 
 ## Installation
 

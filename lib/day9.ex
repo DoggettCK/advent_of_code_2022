@@ -18,7 +18,6 @@ defmodule Day9 do
     input
     |> Enum.map(&parse_instruction/1)
     |> Enum.reduce(state, &process_instruction/2)
-    # |> cleanup_visited()
     |> Map.get(:tail_visited)
     |> map_size()
   end
