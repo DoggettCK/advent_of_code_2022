@@ -30,6 +30,7 @@ defmodule Day10 do
   defp process_instructions("addx " <> count, queue), do: queue ++ [0, String.to_integer(count)]
 
   defp calculate_register([], register), do: Enum.reverse(register)
+
   defp calculate_register([head | tail], [register_head | _] = register) do
     calculate_register(tail, [head + register_head | register])
   end
