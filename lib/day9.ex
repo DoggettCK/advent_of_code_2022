@@ -22,7 +22,7 @@ defmodule Day9 do
     |> map_size()
   end
 
-  defp parse_instruction(<<direction::binary-size(1), " ", count::binary()>>) do
+  defp parse_instruction(<<direction::binary-size(1), " ", count::binary>>) do
     {direction, String.to_integer(count)}
   end
 
