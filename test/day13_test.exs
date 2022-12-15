@@ -14,7 +14,7 @@ defmodule Day13Test do
   end
 
   defp load_input do
-    "test/fixtures/day13_real"
+    "test/fixtures/day13"
     |> File.read!()
     |> String.split("\n", trim: true)
     |> Enum.map(fn line ->
