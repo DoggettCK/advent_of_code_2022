@@ -50,8 +50,8 @@ defmodule Day13 do
   defp compare_ints(left, left), do: :unknown
 
   defp compare_lists([], []), do: :unknown
-  defp compare_lists([], right), do: :in_order
-  defp compare_lists(left, []), do: :wrong_order
+  defp compare_lists([], _right), do: :in_order
+  defp compare_lists(_left, []), do: :wrong_order
 
   defp compare_lists([left | tail_left], [right | tail_right]) do
     case compare_order(left, right) do
